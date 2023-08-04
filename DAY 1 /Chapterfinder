@@ -1,6 +1,0 @@
-a=int(input("how many chapter"))
-b=int(input("how many units"))
-c=int(input("how many chapter"))
-
-d=a*b*c
-print("total chapters : ",d)
