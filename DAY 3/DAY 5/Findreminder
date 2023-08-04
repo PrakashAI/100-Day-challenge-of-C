@@ -1,0 +1,13 @@
+#include<stdio.h>
+main()
+{
+	int n;
+	scanf("%d",&n);
+    printf("Enter value A and B" ); 
+  int a, b,r;
+		scanf("%d%d",&a,&b);
+	  r=a%b;
+		printf("Remainder is %d",r);
+				
+	
+}
