@@ -1,0 +1,48 @@
+/*Chef has infinite coins in denominations of rupees 
+5
+5 and rupees 
+10
+10.
+
+Find the minimum number of coins Chef needs, to pay exactly 
+�
+X rupees. If it is impossible to pay 
+�
+X rupees in denominations of rupees 
+5
+5 and 
+10
+10 only, print 
+−
+1
+−1.*/
+
+#include <stdio.h>
+
+int main(void) {
+	// your code goes her
+	int t,x;
+	scanf("%d",&t);
+	while(t--){
+	   scanf("%d",&x);
+	   if(x>=5)
+	   
+	   {
+	      if(x%10==0)
+	          printf("%d\n",x/10);
+	    
+	   
+	      else if ((x%10)%5==0)
+	     
+	           printf("%d\n",(x/10)+((x%10)/5));
+	         else
+	           printf("-1\n");}
+	           
+       else
+             printf("-1\n");
+
+}
+	return 0;
+}
+
+
