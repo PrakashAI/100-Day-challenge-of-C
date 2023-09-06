@@ -1,0 +1,78 @@
+/*You are given the sequence of Nucleotides of one strand of DNA through a string 
+�
+S of length 
+�
+N. 
+�
+S contains the character 
+�
+,
+�
+,
+�
+,
+A,T,C, and 
+�
+G only.
+
+Chef knows that:
+
+�
+A is complementary to 
+�
+T.
+�
+T is complementary to 
+�
+A.
+�
+C is complementary to 
+�
+G.
+�
+G is complementary to 
+�
+C.
+Using the string 
+�
+S, determine the sequence of the complementary strand of the DNA./*
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int t,x;
+    scanf("%d",&t);
+    while(t--){
+     scanf("%d",&x);
+     char a[x];
+     scanf("%s",&a);
+      for(int i=0;i<x;i++){
+         switch(a[i]){
+           
+           case 'A':
+                printf("T");
+                break;
+           case 'T':
+                 printf("A");
+                 break;
+           case 'C':
+                 printf("G");
+                 break;
+           case 'G':
+                 printf("C");
+                 break;
+        }
+          
+          
+      }
+         
+       printf("\n");  
+     }
+        
+        
+        
+        
+    
+	return 0;
+}
+
