@@ -1,0 +1,72 @@
+#include<stdio.h>
+int main(){
+int n,m,i,j;
+
+printf("Enter first array");
+scanf("%d",&n);
+int a[n];
+for(i=0;i<n;i++){
+    scanf("%d",&a[i]);}
+printf("Enter second array");
+scanf("%d",&m);
+int b[m];
+for(i=0;i<m;i++){
+   scanf("%d",&b[i]);}
+   i=0;j=0;
+while(i<n &&j<m){
+ 
+ if(a[i]==b[j]){
+    printf("%d ",a[i]);
+    i++;
+    j++;
+    
+    while(i<n && a[i]==a[i-1]){
+         i++;}
+    while(j<m && b[j]==a[j-1]){
+          j++;}
+          
+               
+}
+else if(a[i]<b[j]){
+   printf("%d ",a[i]);
+    i++;
+   while(i<n && a[i]==a[i-1]){
+       i++;}
+
+
+}
+     
+else{
+printf("%d ",b[j]);
+ j++;
+ while(j<m && b[j]==b[j-1]){
+     j++;}
+
+
+}
+}
+
+while(i<n ){
+    printf("%d ",a[i]);
+    i++;
+    while(i<n &&a[i]==a[i-1]){
+         i++;}
+    }
+
+while(j<m){
+     printf("%d ",b[i]);
+     j++;
+     while(j<m &&a[j]==a[j-1]){
+        j++;}}
+
+
+   
+
+
+
+
+
+
+return 0;
+
+}
