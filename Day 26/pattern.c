@@ -1,23 +1,20 @@
-#include   <stdio.h>
-    int main(){
 
-    int i,j;
-    for(i=1;i<=5;i++){
-        for (j=0;j<i;j++)
-        {
-            printf("%d",j+1);
+#include <stdio.h>
+
+int main() {
+    
+    int i,j,x;
+    printf("Enter the number :\n");
+    scanf("%d",&x);
+    for(i=1;i<=x;i++){
+        for(j=1;j<=i;j++){
+            printf("%d",j);
+            
         }
+        
         printf("\n");
-
-
+        
     }
-
-
-
-
-
-
-
-return 0;
-
-    }
+    
+    return 0;
+}
